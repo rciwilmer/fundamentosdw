@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.columna h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.columna p {
+    text-align: justify;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Las columnas se apilan en una sola columna */
+        align-items: center; /* Alinea las columnas al centro */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio entre las columnas apiladas */
+        width: 80%; /* Las columnas ocupan el 80% del ancho de la pantalla */
+    }
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .contenedor {
+        flex-direction: row; /* Las columnas siguen en fila */
+    }
+
+    .columna {
+        width: 30%; /* Las columnas ocupan el 30% del ancho */
+        margin: 10px;
+    }
+}
