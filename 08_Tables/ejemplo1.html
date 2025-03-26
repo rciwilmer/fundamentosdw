@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tablas</title>
+    <meta name="description" content="sistema de ventas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="html5,css,javascript,desarrollo web" />
+    <meta name="author" content="Wilmer Vera Ostios" />
+    <link rel="shortcut icon" href="../img/clientes1.png" type="image/x-icon" />
+    <!--Para los estilos css-->
+    <link rel="stylesheet" href="/CSS/ejmplo.css" />
+    <style>
+        h2{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: blue;">
+   <h2>TEMA: TABLAS EN HTML5</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non labore consequuntur sapiente recusandae. Molestiae magni fugit ad saepe at maxime eligendi maiores vero unde. Temporibus laborum cumque nam autem?</p>
+    <table border="2px" style="width: 100%; border-color: red; border-style: dotted;">
+       <tr style="background-color:antiquewhite"><!--Para los encabezados-->
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+        <th>Encabezado 4</th>
+       </tr>
+
+       <tr><!--Para la fila 1-->
+        <td>Fila 1,Celda 1</td>
+        <td>Fila 2,Celda 2</td>
+        <td>Fila 3,Celda 3</td>
+        <td>Fila 4,Celda 4</td>
+       </tr>
+
+       <tr><!--Para la fila 2-->
+        <td>Fila 2,Celda 2</td>
+        <td>Fila 2,Celda 2</td>
+        <td>Fila 2,Celda 3</td>
+        <td>Fila 2,Celda 4</td>
+       </tr>
+    </table>
+
+
+    <!--Agrupacion de celdas-->
+    <h2>Agrupacion de celdas</h2>
+    <table border="2px" style="width: 100%; border-color: chocolate border-style: dashed;">
+        <tr style="background-color:rgb(215, 243, 250)"><!--Para los encabezados-->
+         <th>Encabezado 1</th>
+         <th>Encabezado 2</th>
+         <th>Encabezado 3</th>
+         <th>Encabezado 4</th>
+        </tr>
+ 
+        <tr><!--Para la fila 1-->
+         <td rowspan="2">Campo 1</td>
+         <td>Campo 2</td>
+         <td>Campo 3</td>
+         <td>Campo 4</td>
+        </tr>
+
+        <tr><!--Para la fila 1-->
+            <td colspan="2">Campo 6</td>
+            <td>Campo 8</td>
+        </tr>
+
+        <tr>
+            <td>Campo 10</td>
+            <td>Campo 11</td>
+            <td colspan="2" rowspan="2">Campo 12</td>
+        </tr>
+
+        <tr>
+            <td>Campo 13</td>
+            <td>Campo 14</td>
+        </tr>
+     </table>
+
+<!--Tabla con encabezado, cuerpo y pie de página-->
+<h2>Tabla con encabezado, cuerpo y pie de página</h2>
+<table border="2px" style="width: 100%; border-color: blueviolet; border-style: inset;">
+    <thead style="background-color:antiquewhite">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Zapatos</td>
+            <td>$50</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Camisas</td>
+            <td>$30</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Pantalones</td>
+            <td>$40</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>6</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!--Tabla con celdas fusionadas-->
+<h2>Tabla con celdas fusionadas</h2>
+<table border="1.5px" style="width: 100%; border-color: red; border-style: double;">
+    <thead style="background-color:antiquewhite">
+        <tr>
+            <th>Nombre</th>
+            <th>Informacion de contacto</th>
+            <th>Detalles</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Ana</td>
+            <td>Email: ana@gmail.com<br>Telefono: 123456789</td>
+            <td>Edad: 20<br>Ciudad: Madrid</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">Comentarios: Cliente regular</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Email: Carlos@gmail.com<br>Telefono: 123456789</td>
+            <td>Edad: 30<br>Ciudad: Barcelona</td>
+        </tr>
+        <tr>
+            <td>Elena</td>
+            <td>Email: Elana@gmail.com<br>Telefono: 123456789</td>
+            <td>Edad: 30<br>Ciudad: Valencia</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+    <script src="/javascript/ejemplo.js" async defer></script>
+  </body>
+</html>

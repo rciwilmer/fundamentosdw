@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Imagenes</title>
-    <meta name="description" content="sistema de ventas" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="html5,css,javascript,desarrollo web" />
-    <meta name="author" content="Wilmer Vera Ostios" />
-    <link rel="shortcut icon" href="../img/clientes1.png" type="image/x-icon" />
-    <!--Para los estilos css-->
-     <link rel="stylesheet" href="/CSS/ejmplo.css" />
-  </head>
-  <body>
-<h2>Imagenes</h2>
-<p>Imgen desde una URL externa</p>
-<img src="https://services.meteored.com/img/article/novo-estudo-mostra-que-enfraquecimento-da-amoc-e-desmatamento-podem-levar-a-floresta-amazonica-ao-colapso-1730553946388_512.png" alt="Imagen no existente, verifique!....">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Imágenes</title>
+    <style>
+        .imagenes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 2 columnas */
+            gap: 10px; /* Espacio entre imágenes */
+        }
 
-
-<p>Imagen local</p>
-<img src="/img/arroz_pato.png"alt="Imagen no existente, verifique!....">
-
-
-
-<p>Imagen atributos 'width', 'height'</p>
-<img src="/img/ceviche.jpg"alt="Imagen con dimensiones" width="400px" height="300px">
-<img src="/img/chifa.png"alt="Imagen con dimensiones" width="400px" height="300px">
-<img src="/img/lomo-saltado.png"alt="Imagen con dimensiones" width="400px" height="300px" style="border-radius: 50%;">
-<img src="/img/ceviche.jpg"alt="Imagen con dimensiones" width="400px" height="300px">
-
-<p>Imagen atributos 'width', 'height'</p>
-<img src="/img/ceviche.jpg"alt="Imagen con dimensiones" width="400px" height="300px">
-<img src="/img/chifa.png"alt="Imagen con dimensiones" width="400px" height="300px">
-<img src="/img/lomo-saltado.png"alt="Imagen con dimensiones" width="400px" height="300px" style="border-radius: 50%;">
-<img src="/img/ceviche.jpg"alt="Imagen con dimensiones" width="400px" height="300px">
-
-
-    <script src="/javascript/ejemplo.js" async defer></script>
-    </body>
+        .imagenes img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cuatro Imágenes</h1>
+    <div class="imagenes">
+        <img src="/img/arroz_pato.png" alt="Imagen 1">
+        <img src="/img/ceviche.jpg" alt="Imagen 2">
+        <img src="/img/lomo-saltado.png" alt="Imagen 3">
+        <img src="/img/chifa.png" alt="Imagen 4">
+        <img src="/img/arroz_pato.png" alt="Imagen 1">
+        <img src="/img/ceviche.jpg" alt="Imagen 2">
+        <img src="/img/lomo-saltado.png" alt="Imagen 3">
+        <img src="/img/chifa.png" alt="Imagen 4">
+    </div>
+</body>
 </html>
