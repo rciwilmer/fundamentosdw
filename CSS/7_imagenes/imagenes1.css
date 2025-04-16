@@ -1,0 +1,48 @@
+/*Tamaños y dimesiones*/
+img{
+width: 100%;
+height: auto;
+max-width: 400px;
+min-height: 200px;
+min-width: 200px;
+}
+
+/*posicionamiento*/
+img{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/*alineacion*/
+
+.container{
+    text-align: center;
+  
+
+}
+img{
+    vertical-align: middle;
+}
+
+/*borders*/
+img{
+    border: 2px solid #ccc;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*Otras propiedades*/
+img{
+    display:inline;
+    overflow: scroll;
+   }
+
+   body{
+    width: 100vh;
+    height: auto;
+
+   }
+

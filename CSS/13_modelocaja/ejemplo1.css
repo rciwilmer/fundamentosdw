@@ -1,0 +1,29 @@
+/*Estilos para el contenedor*/
+.caja{
+    background-color: antiquewhite;
+    width: 400px;
+    height: 300px;
+    border: 4px solid #333;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/*Estilos para el padding*/
+.caja .padding{
+    background-color: #ffcdd2;
+    padding: 20px;
+
+}
+
+/*Estilos para el contenido dentro del pading*/
+.caja .padding .content{
+    background-color: chartreuse;
+    padding: 10px;
+    border: 2px dashed red;
+}
+.caja .margen{
+    background-color: #f0e68c;
+    margin: 20px;
+    
+}

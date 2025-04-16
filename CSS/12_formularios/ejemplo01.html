@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Producto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulario01.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro de Producto</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="product-name"><i class="fa fa-cogs"></i> Nombre del Producto</label>
+                <input type="text" id="product-name" name="product_name" placeholder="Ingresa el nombre del producto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-code"><i class="fa fa-barcode"></i> Código del Producto</label>
+                <input type="text" id="product-code" name="product_code" placeholder="Ingresa el código del producto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-price"><i class="fa fa-dollar-sign"></i> Precio</label>
+                <input type="number" id="product-price" name="product_price" placeholder="Ingresa el precio" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-description"><i class="fa fa-pencil-alt"></i> Descripción</label>
+                <textarea id="product-description" name="product_description" placeholder="Describe el producto" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="product-image"><i class="fa fa-image"></i> Imagen del Producto</label>
+                <input type="file" id="product-image" name="product_image" accept="image/*">
+            </div>
+
+            <button type="submit">Registrar Producto</button>
+        </form>
+        <div class="form-footer">
+            <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+        </div>
+    </div>
+</body>
+</html>

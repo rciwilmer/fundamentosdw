@@ -1,0 +1,100 @@
+h1,h2{
+    text-align: center;
+    color: #333;
+}
+
+p,strong{
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;/*Asegura q el padding no afecte el ancho*/
+
+}
+/*Borders*/
+.border-none{
+    border: none;
+}
+
+.border-hidden{
+    border: hidden;
+}
+.border-dotted{
+    border: 5px dotted #007BEF;
+}
+.border-dashed{
+    border: 5px dashed #28a745;
+}
+
+.border-solid{
+    border: 5px solid #dc3545;
+    text-align: center;
+    background-color: #28a745;
+    width: 100%;
+}
+.border-solid:hover{
+    background-color: #6f42c1;
+    width: 80%;
+    text-transform: inherit;
+    color: #ffc107;
+}
+
+.border-double{
+    border: 5px double #ffc107;
+}
+
+.border-groove{
+    border: 5px groove #17a2b8;
+}
+.border-ridge{
+    border: 5px ridge #6f42c1;
+}
+
+.border-inset{
+    border: 5px inset #fd7e14;
+}
+
+.border-outset{
+    border: 5px outset #20c997;
+}
+
+/*Bordes compuestos*/
+.border-top{
+    border-top: 5px solid #007BFF;
+}
+.border-right{
+    border-right: 5px dashed #28a745;
+}
+.border-bottom{
+    border-bottom: 5px dotted #dc3545;
+}
+
+.border-left{
+    border-left: 5px double #ffc107;
+    margin-bottom: 40px;
+}
+.border-all{
+    border-top: 5px solid #007BFF;
+    border-right: 5px dashed #28a745;
+    border-bottom: 5px dotted #dc3545;
+    border-left: 5px double #ffc107;
+    width: 70%;
+    border-radius: 20px;
+    color: green;
+    line-height: 1.5;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    
+
+}
+.border-all:hover{
+background-color: #fd7e14;
+color: blue;
+width: 100%;
+border-top: 5px solid #c51c76;
+border-right: 5px dashed #470787;
+border-bottom: 5px dotted #6fc71c;
+border-left: 5px double #4c23d4;
+border-radius: 15px;
+text-align: center;
+
+}

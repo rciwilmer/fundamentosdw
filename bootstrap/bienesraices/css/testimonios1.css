@@ -1,0 +1,16 @@
+.testimonials-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .testimonials-wrapper::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+  }
+
+  .testimonial-card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .testimonial-card:hover {
+    transform: scale(1.05);
+  }
